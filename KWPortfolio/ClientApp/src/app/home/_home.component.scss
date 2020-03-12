@@ -1,0 +1,17 @@
+.jumbo-title {
+  font-size: calc(14px + 3vw);
+  font-weight: 300;
+}
+
+.jumbo-text {
+  font-size: calc(12px + 1vw);
+  font-weight: 300;
+}
+
+.front-page_bg-image {
+  background-image: url("./assets/images/front_page_bg-sm.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+}

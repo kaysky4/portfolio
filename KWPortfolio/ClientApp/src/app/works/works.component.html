@@ -1,0 +1,24 @@
+<div class="container-fluid">
+  <div class="d-flex flex-row mt-5 mb-4">
+    <div class="col-12">
+      <div class="form-group d-flex pb-2">
+        <h3 class="ml-5 pr-3">Works</h3>
+
+        <div ngbDropdown class="d-inline-block">
+          <button class="btn btn-brand" id="dropdownMenuButton" ngbDropdownToggle>Select a Focus</button>
+          <div ngbDropdownMenu aria-labelledby="dropdownMenuButton">
+            <button class="dropdown-item" [routerLink]="[{ outlets: { samples: ['art'] } }]">Artwork</button>
+            <button class="dropdown-item" [routerLink]="[{ outlets: { samples: ['cad'] } }]">CAD Drawings</button>
+            <button class="dropdown-item" [routerLink]="[{ outlets: { samples: ['graphics'] } }]">Graphic Design</button>
+            <button class="dropdown-item" [routerLink]="[{ outlets: { samples: ['photos'] } }]">Photography</button>
+            <button class="dropdown-item" [routerLink]="[{ outlets: { samples: ['ux'] } }]">UX</button>
+            <button class="dropdown-item" [routerLink]="[{ outlets: { samples: ['writings'] } }]">Writing</button>
+          </div>
+        </div>
+      </div>
+      
+      <router-outlet name="samples"></router-outlet>
+
+    </div>
+  </div>
+</div>

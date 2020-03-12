@@ -1,0 +1,76 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="d-none d-lg-flex col-lg-3 sidenav">
+      <div class="d-flex justify-content-center pt-5">
+        <img class="img-circle mypic d-none d-md-block pb-2" alt="K. Winters Photo" src="./assets/images/resume/K.Winters.jpg">
+      </div>
+      <h3 style="font-weight:600">Resum&eacute;</h3>
+      <button type="button" class="btn btn-brand my-3" [routerLink]="[{ outlets: { section: ['ed-exp'] } }]">Education &amp; Experience</button>
+      <button type="button" class="btn btn-brand" [routerLink]="[{ outlets: { section: ['certs'] } }]">Certifications</button>
+      <button type="button" class="btn btn-brand my-3" [routerLink]="[{ outlets: { section: ['tech'] } }]">Tech Skills</button>
+      <button type="button" class="btn btn-brand" [routerLink]="[{ outlets: { section: ['soft'] } }]">Soft Skills</button>
+      <div class="highlight-button my-3">
+        <a href="./assets/docs/Winters_Resume_Web.pdf" target="_blank">Printable Resumé</a>
+      </div>
+    </div>
+
+    <div class="d-block d-lg-none mobile-menu">
+      <div class="tab_menu">
+        <span class="old-text">
+          <i class="fa fa-briefcase fa-2x" style="color: #8d7147"></i>
+        </span>
+        <span class="new-text"> <i class="fa fa-briefcase fa-2x" style="color: #3a2306"></i>
+          <a style="text-decoration: none;" [routerLink]="[{ outlets: { section: ['ed-exp'] } }]">
+          <span class="new-text-inside pl-1">Education &amp; Experience</span></a>
+        </span>
+      </div>
+
+      <div class="tab_menu">
+        <span class="old-text">
+          <i class="fa fa-certificate fa-2x" style="color: #8d7147"></i>
+        </span>
+        <span class="new-text"> <i class="fa fa-certificate fa-2x" style="color: #3a2306"></i>
+          <a style="text-decoration: none;" [routerLink]="[{ outlets: { section: ['certs'] } }]">
+          <span class="new-text-inside pl-1">Certifications</span></a>
+        </span>
+      </div>
+
+      <div class="tab_menu">
+        <span class="old-text">
+          <i class="fa fa-laptop fa-2x" style="color:#8d7147"></i>
+        </span>
+        <span class="new-text"><i class="fa fa-laptop fa-2x" style="color: #3a2306;"></i>
+          <a style="text-decoration: none;" [routerLink]="[{ outlets: { section: ['tech'] } }]">
+          <span class="new-text-inside pl-1">Tech Skills</span></a>
+        </span>
+      </div>
+
+      <div class="tab_menu">
+        <span class="old-text">
+          <i class="fa fa-heart fa-2x" style="color:#8d7147"></i>
+        </span>
+        <span class="new-text"><i class="fa fa-heart fa-2x" style="color: #3a2306;"></i>
+          <a style="text-decoration: none;" [routerLink]="[{ outlets: { section: ['soft'] } }]">
+          <span class="new-text-inside pl-1">Soft Skills</span></a>
+        </span>
+      </div>
+
+      <div class="tab_menu">
+        <span class="old-text">
+          <i class="fa fa-print fa-2x" style="color: #8d7147;"></i>
+        </span>
+        <span class="new-text"><i class="fa fa-print fa-2x" style="color: #3a2306;"></i>
+          <a style="text-decoration: none;" href="./assets/docs/Winters_Resume_Web.pdf" target="_blank">
+          <span class="new-text-inside pl-1">Printable Resumé</span></a>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-11 col-sm-12 col-md-10 offset-1 offset-sm-0 offset-md-2">
+
+      <router-outlet name="section"></router-outlet>
+
+    </div>
+  </div>
+</div>

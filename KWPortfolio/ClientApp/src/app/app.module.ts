@@ -18,7 +18,7 @@ import { FooterComponent } from './footer/footer.component';
 import { WorksModule } from './works/works.module';
 import { ResumedashModule } from './resumedash/resumedash.module';
 
-const routes: Routes = [
+const routes: Routes = [ 
   {path: '', component: HomeComponent},
 ];
 

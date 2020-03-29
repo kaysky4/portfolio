@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+import { faWordpressSimple } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-nav-menu',
@@ -18,6 +19,9 @@ export class NavMenuComponent {
     this.isExpanded = !this.isExpanded;
   }
 
+  public isCollapsed: boolean;
+
   faLinkedinIn = faLinkedinIn;
   faEnvelope = faEnvelope;
+  faWordpressSimple = faWordpressSimple;
 }
